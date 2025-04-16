@@ -1,5 +1,6 @@
 # Youtube Channel Performance Analysis
 **Overview** 
+
 This project is focusing on analysing the performance of Youtube content using metadata exported from a personal channel. The data was cleaned. categorised, and converted from Excel to SQLite format for structured querying and future analysis. 
 
 **Objectives**
