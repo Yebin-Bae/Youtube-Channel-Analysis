@@ -11,6 +11,7 @@
 
 # Metadata Description
 The very first metadata is an Excel file which was exported from Youtube.
+
 Metadata was transformed into .db format, enabling performance analysis in DB Browser.
 
 - ContentID: A unique identifier assigned to each Youtube video
