@@ -4,15 +4,15 @@
 **Objectives**
 
 **Tools Used**
-
+- Excel
+- DB Browser for SQLite
+- Terminal to commit&push
 
 
 
 
 # Metadata Description
-The very first metadata is an Excel file which was exported from Youtube.
-
-Metadata was transformed into .db format, enabling performance analysis in DB Browser.
+The initial metadata is an Excel file which has exported from Youtube. Metadata was transformed into .db format, enabling performance analysis in DB Browser.
 
 - ContentID: A unique identifier assigned to each Youtube video
 - Title: The name of the video
