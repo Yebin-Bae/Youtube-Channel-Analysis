@@ -1,5 +1,8 @@
 # Youtube Channel Performance Analysis
-**Objectives** 
+**Overview** 
+**Objectives**
+**Tools Used**
+
 
 
 
@@ -13,3 +16,7 @@
 - Subscribers: The number of subscribets gained from the video
 - Impressions: The number of times the video thumbnail was shown to viewers
 - Impressions click-through rate (%): The percentage of impressions that resulted in views (i.e., how often viewers clicked after seeing the thumbnail)
+
+# Metadata Information
+This meta data was collected from my own Youtube Channel 'BinnieBae' which means this is not a fictional data. 
+I am very welcome if you visit my channel! Enjoy🎥
