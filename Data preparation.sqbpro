@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="metadata.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1307"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="youtube_videos" custom_title="0" dock_id="1" table="4,14:mainyoutube_videos"/><dock_state state="000000ff00000000fd000000010000000200000356000002c5fc0100000001fb000000160064006f0063006b00420072006f00770073006500310100000000000003560000010a00ffffff000003560000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="youtube_videos" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="86"/><column index="2" value="300"/><column index="3" value="47"/><column index="4" value="130"/><column index="5" value="64"/><column index="6" value="47"/><column index="7" value="132"/><column index="8" value="87"/><column index="9" value="87"/><column index="10" value="235"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">/* 
+- Create New column 'Duration minutes' to clarify the exact minutes of each videos 
+- Remove all Null values 
+- Rounded  values to 2 decimal places
+*/
+
+SELECT 
+    ContentId,
+	title,
+	Genre,
+	&quot;Video Publish Date&quot;,
+	round(duration/60.0, 2) AS 'Duration minutes',
+	Views,
+	round(&quot;Watch time (hours)&quot;,  2) AS 'Watch Time (Hours)',
+	CASE strftime('%w', 
+	          date(
+			            substr( &quot;Video Publish Date&quot;, -4, 4) ||  '-' ||
+						CASE substr(&quot;Video Publish Date&quot;, 1, 3)
+						             WHEN 'Jan' THEN '01'
+									 WHEN 'Feb' THEN '02'
+									 WHEN 'Mar' THEN '03'
+									 WHEN 'Apr' THEN '04'
+									 WHEN 'May' THEN '05'
+									 WHEN 'Jun' THEN '06'
+									 WHEN 'Jul' THEN '07'
+									 WHEN 'Aug' THEN '08'
+									 WHEN 'Sep' THEN '09'
+									 WHEN 'Oct' THEN '10'
+									 WHEN 'Nov' THEN '11'
+									 WHEN 'Dec' THEN '12'
+						END || '-' ||
+						printf('%02d', CAST(TRIM(substr(&quot;Video Publish Date&quot;, 5, instr(&quot;Video Publish Date&quot;, ',') - 5)) AS INTEGER))
+						)
+			)
+	            WHEN '0' THEN 'Sunday'
+				WHEN '1' THEN 'Monday'
+				WHEN '2' THEN 'Tuesday'
+				WHEN '3' THEN 'Wednesday'
+				WHEN '4' THEN 'Thursday'
+				WHEN '5' THEN 'Friday'
+				WHEN '6' THEN 'Saturday'
+	END AS &quot;Publish Weekday&quot;,
+   Subscribers,
+   Impressions,
+   &quot;Impressions click-through rate (%)&quot;
+FROM youtube_videos
+WHERE title IS NOT NULL;
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
