@@ -4,7 +4,12 @@
 This project is focusing on analysing the performance of Youtube content using metadata exported from a personal channel. The data was cleaned. categorised, and converted from Excel to SQLite format for structured querying and future analysis. 
 
 **Objectives**
-
+- Identify which video genres perform best in terms of views, watch time, and subscriber gain
+- Analyse the impact of publish day on video performance
+- Explore the relationship between video duration and engagement metrics
+- Examine how impressions and CTR influence actual view counts
+- Establish a performance baseline to cokmpare with a follow-up analysis after 6 months
+- Derive actionable insights to guide content planning and posting strategies
 **Tools Used**
 - Excel
 - DB Browser for SQLite
