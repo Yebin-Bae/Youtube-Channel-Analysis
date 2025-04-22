@@ -10,6 +10,7 @@ This project is focusing on analysing the performance of Youtube content using m
 - Examine how impressions and CTR influence actual view counts
 - Establish a performance baseline to cokmpare with a follow-up analysis after 6 months
 - Derive actionable insights to guide content planning and posting strategies
+  
 **Tools Used**
 - Excel
 - DB Browser for SQLite
