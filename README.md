@@ -7,7 +7,7 @@ This project is focusing on analysing the performance of Youtube content using m
 - Identify which video genres perform best in terms of views, watch time, and subscriber gain
 - Analyse the impact of publish day on video performance
 - Examine how impressions and CTR influence actual view counts
-- Establish a performance baseline to cokmpare with a follow-up analysis after 6 months
+- Establish a performance baseline to cokmpare with a follow-up analysis after 3 months
 - Derive actionable insights to guide content planning and posting strategies
   
 **Tools Used**
