@@ -32,5 +32,5 @@ The initial metadata is an Excel file which has exported from Youtube. Metadata 
 
 **About my Youtube Channel**
 
-This meta data was collected from my own Youtube Channel 'BinnieBae' which means this is not a fictional data. 
+This meta data was collected from my own Youtube Channel 'BinnieBae' which means **this is not a fictional data**. 
 I am very welcome if you visit my channel! Enjoy🎥 https://www.youtube.com/@BaEbAe417
