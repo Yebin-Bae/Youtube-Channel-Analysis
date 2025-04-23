@@ -1,7 +1,6 @@
 import sqlite3
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
 
 conn=sqlite3.connect('metadata.db')
 
@@ -79,18 +78,23 @@ ORDER BY
 '''
 df = pd.read_sql_query(query,conn)
 conn.close()
+fig, axs=plt.subplots(1,3,figsize=(18, 5))
 
-plt.figure(figsize=(12,6))
-bar_width=0.25
-x = range(len(df))
+axs[0].bar(df['Genre'], df['Avg Views'], color='purple')
+axs[0].set_title('Average Views')
+axs[0].set_ylabel('Views')
+axs[0].tick_params(axis='x', rotation=45)
 
-plt.bar(x, df['Avg Views'], width=bar_width, label='Avg Views')
-plt.bar([i + bar_width for i in x], df['Avg Watch Time (Hours)'], width=bar_width, label='Avg Watch Time (Hours)')
-plt.bar([i + 2 * bar_width for i in x], df['Avg Subscriber gain'], width=bar_width, label='Avg Subscriber gain')
+axs[1].bar(df['Genre'], df['Avg Watch Time (Hours)'], color='Blue')
+axs[1].set_title('Average Watch Time (Hours)')
+axs[1].set_ylabel('Hours')
+axs[1].tick_params(axis='x', rotation=45)
 
-plt.xticks([i+bar_width for i in x], df['Genre'], rotation=45)
-plt.ylabel('Values')
-plt.title('Performance Comparison by Genres')
-plt.legend()
+axs[2].bar(df['Genre'], df['Avg Subscriber gain'], color='Yellow')
+axs[2].set_title('Average Watch Time (Hours)')
+axs[2].set_ylabel('Subscribers')
+axs[2].tick_params(axis='x', rotation=45)
+
+plt.suptitle('Video Performance based on Genre', fontsize =16)
 plt.tight_layout()
 plt.show()
