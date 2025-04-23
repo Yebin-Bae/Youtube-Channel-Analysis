@@ -1,4 +1,4 @@
-# Youtube Channel Performance Analysis
+# 📈 Youtube Channel Performance Analysis
 **Overview** 
 
 This project is focusing on analysing the performance of Youtube content using metadata exported from a personal channel. The data was cleaned. categorised, and converted from Excel to SQLite format for structured querying and future analysis. 
@@ -18,7 +18,7 @@ This project is focusing on analysing the performance of Youtube content using m
 
 
 
-# Metadata Description
+# 📁 Metadata Description
 The initial metadata is an Excel file which has exported from Youtube. Metadata was transformed into .db format, enabling performance analysis in DB Browser.
 
 - ContentID: A unique identifier assigned to each Youtube video
@@ -34,3 +34,5 @@ The initial metadata is an Excel file which has exported from Youtube. Metadata 
 
 This meta data was collected from my own Youtube Channel 'BinnieBae' which means **this is not a fictional data**. 
 I am very welcome if you visit my channel! Enjoy🎥 https://www.youtube.com/@BaEbAe417
+
+
