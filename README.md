@@ -36,6 +36,9 @@ This meta data was collected from my own Youtube Channel 'BinnieBae' which means
 I am very welcome if you visit my channel! Enjoy🎥 https://www.youtube.com/@BaEbAe417
 
 # 📊 Visualisation Overview
+- Video Performance based on Genre
 ![Video Performance based on Genre](images/Video_Performance_based_on_Genre.png)
+
+- Impacts depends on Publishing Day
 ![Impacts depends on Publishing Day](images/Impacts_depeding_on_Publishing_Day.png)
 
