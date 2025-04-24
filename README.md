@@ -37,4 +37,5 @@ I am very welcome if you visit my channel! Enjoy🎥 https://www.youtube.com/@Ba
 
 # 📊 Visualisation Overview
 ![Video Performance based on Genre](images/Video_Performance_based_on_Genre.png)
+![Impacts depends on Publishing Day](images/Impacts_depeding_on_Publishing_Day.png)
 
