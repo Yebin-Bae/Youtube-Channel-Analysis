@@ -91,7 +91,7 @@ axs[1].set_ylabel('Hours')
 axs[1].tick_params(axis='x', rotation=45)
 
 axs[2].bar(df['Genre'], df['Avg Subscriber gain'], color='Yellow')
-axs[2].set_title('Average Watch Time (Hours)')
+axs[2].set_title('Average Subscriber Gain')
 axs[2].set_ylabel('Subscribers')
 axs[2].tick_params(axis='x', rotation=45)
 
